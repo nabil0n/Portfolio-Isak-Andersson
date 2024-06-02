@@ -15,10 +15,10 @@ while input() != pw:
     print("Wrong password, try again: ")
 else:
     print("""What would you like to calculate? Press:
-          1. Add
-          2. Subtract
-          3. Multiply
-          4. Divide""")
+        1. Add
+        2. Subtract
+        3. Multiply
+        4. Divide""")
     choice = int(input())
     while choice < 1 or choice > 4:
         print("Not a valid option.")
