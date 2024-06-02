@@ -47,7 +47,7 @@ def sort_directories(base_path):
         
         target_folder = os.path.join(base_path, prefix)
         if not os.path.exists(target_folder):
-            os.makedirs(target_folder)
+            os.makedirs(target_folder, exist_ok=True)
         
         for directory in dirs:
             src_path = os.path.join(base_path, directory)
