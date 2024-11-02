@@ -32,7 +32,7 @@ def move_files(directory, extensions, folder_name):
             print(f"Moved {file_path} to {folder_path}")
 
 def sort_directories(base_path):
-    directories = [d for d in os.listdir(base_path) if os.path.isdir(os.path.join(base_path, d))]
+    directories = [d for d in os.listdir(base_path) if os.path.isdir(os.path.join(base_path, d)) and len(d) > 3]
     
     grouped_directories = {}
     for directory in directories:
